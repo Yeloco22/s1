@@ -177,7 +177,7 @@ async function getTable(params, outs){
 
 
 
-async function getVIS_Calcular_FillRate(params, outs){
+async function getVIS_Calcular_FillRate_2(params, outs){
 
 
 
@@ -542,7 +542,7 @@ async function getVIS_Calcular_KPI_Produccion_FillRate(params, outs){
 
 }
 
-router.get('/getSP/VIS_Calcular_FillRate',(req, res) => {
+router.get('/getSP/VIS_Calcular_FillRate_2',(req, res) => {
 
   let inicio = moment();
   console.log("Llamada a SP : ********");
@@ -550,7 +550,7 @@ router.get('/getSP/VIS_Calcular_FillRate',(req, res) => {
 
   res.setHeader('Content-Type', 'application/json');
 
-  getVIS_Calcular_FillRate_2(req.query,res).then((datos)=>{
+  getVIS_Calcular_FillRate(req.query,res).then((datos)=>{
 
             res.setHeader('Content-Type', 'application/json');
 
